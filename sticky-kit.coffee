@@ -221,7 +221,7 @@ $.fn.stick_in_parent = (opts={}) ->
             elm.css({
               position: "absolute"
               bottom: padding_bottom
-              top: "auto"
+              top: "calc(100% - " + offset_top + "px)"
             }).trigger("sticky_kit:bottom")
 
       recalc_and_tick = ->
